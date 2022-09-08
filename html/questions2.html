@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Styles/questions.css">
+    <title> Homepage </title>
+</head>
+
+<body>
+
+    <!-- nav -->
+    <div class="top-nav">
+        <ul class="nav-list">
+            <li class="list-items"> <a href="../html/home.html"> <img id="image" src="../images/logo.png" width="50" height="50"></a> </li>
+            <li class="list-items"> <a class="list-items" href="../html/questions.html"> Questions</a></li>
+            <li class="list-items"> <a class="list-items" href="../html/questions2.html"> Questions 2</a></li>
+            <li class="list-items"> <a class="list-items" href="../pages/clone.html"> Assignments </a></li>
+        </ul>
+    </div>
+    <!-- questions -->
+    <section>
+        <h1>QUESTIONS</h1>
+
+       <p> 1. Name the three ways to declare a variable? </p>
+        var, let, const
+        
+       <p> 2. Which of the three variable declarations should you avoid and why?</p>
+        var because it has an global scope and it is inmutable
+        
+       <p> 3. What rules should you follow when naming variables?</p>
+        it must has relationship with the information it archieve. you can use camelcase or bem
+        
+        <p>4. What should you look out for when using the + operator with numbers and
+        strings?</p>
+        it's concatenate strings and you have to use single/doble quotes. 'hello' + 'world
+        
+       <p> 5. How does the % operator work?</p>
+        The remainder operator (%) returns the remainder of the division between two operands.
+        
+       <p>6. Explain the difference between == and ===.</p>
+        === it means strictly equal and compares if two operands are same in type and value. Returns a boolean result. t/f
+        == regular equal, and compares only the value not type of elements.
+        
+       <p> 7. When would you receive a NaN result?</p>
+        is a propiety of an object that declares its not a number. eg: '2' + 2
+        
+        <p></p>8. How do you increment and decrement a number?</p>
+        let number = 0
+        const adding = number++ (adds one to)
+        
+        <p> 9. Explain the difference between prefixing and post-fixing increment/decrement
+        operators.</p>
+        If used postfix, with operator after operand (for example, x++), the increment operator increments and returns the value before incrementing.
+        If used prefix, with operator before operand (for example, ++x), the increment operator increments and returns the value after incrementing.
+        
+        <p> 10. What is operator precedence and how is it handled in JS?</p>
+        determinate the order in which operators are evaluated one respect the other. you can handled with ()
+        11. How do you log information to the console?</p>
+        const data = 'Hello World'
+        console.log('data')
+        
+        <p> 12. What does unary plus operator do to string representations of integers?</p>
+        The unary plus (+) precedes its operand and evaluates to its operand. It attempts to convert the operand to a number, if it isn't already.
+        
+        
+        <p> 13. What are the eight data types in JavaScript?</p>
+        String. Number. Boolean. Null.
+        Undefined. Symbol. BigInt. Object.
+        
+        <p> 14. Which data type is NOT primitive?</p>
+        Objects
+        
+        <p>15. What is the relationship between null and undefined?</p>
+        undefined is a variable that refers to something that doesn't exist, and the variable isn't defined to be anything. null is a variable that is defined but is missing a value.
+        
+        <p> 16. What is the difference between single, double, and backtick quotes for strings?</p>
+        there is no real difference between using single quotes, double quotes but with backticks you can use javascript variables in the string
+        
+        <p> 17. What is the term for embedding variables/expressions in a string?</p>
+        JavaScript string interpolation is the process of embedding an expression into part of a string.
+        
+        <p> 18. Which type of quote lets you embed variables/expressions in a string?</p>
+        backticks
+        
+        <p> 19. How do you embed variables/expressions in a string?</p>
+        `${variable}`
+        
+        <p> 20. How do you escape characters in a string?</p>
+        \ is a special character within a string used for escaping
+        
+        <p> 21. What is the difference between the slice/substring/substr string methods?</p>
+        slice() extracts parts of a string and returns the extracted parts in a new string.
+        substr() extracts parts of a string, beginning at the character at the specified position, and returns the specified number of characters.
+        substring() extracts parts of a string and returns the extracted parts in a new string.
+        
+        <p> 22. What are the three logical operators and what do they stand for?</p>
+        There are four logical operators in JavaScript: || (OR), && (AND), ! (NOT), ??
+        
+        <p> 23. What are the comparison operators?</p>
+        Equal ( == )	Returns true if the operands are equal.
+        Not equal ( != )	Returns true if the operands are not equal.
+        Strict equal ( === )	Returns true if the operands are equal and of the same type. 
+        
+        <p> 24. What are truthy and falsy values?</p>
+        Truthy values are values that evaluate to True in a boolean context. Falsy values are values that evaluate to False in a boolean context
+        
+        <p> 25. What are the falsy values in JavaScript?</p>
+        There are only six falsey values in JavaScript: undefined , null , NaN , 0 , "" (empty string), and false 
+        
+        <p>26. What are conditionals?</p>
+        Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run
+        
+        <p>27. What is the syntax for an if/else conditional?</p>
+        if (condition) {
+          //  console.log('ok')
+        } else {
+         // console.log('wrong')
+        }
+        
+        <p> 28. What is the syntax for a switch statement?</p>
+        switch (expresión) {
+          case value1:
+            //code
+            break;
+          case value2:
+            //code
+            break;
+        
+        
+            <p> 29. What is the syntax for a ternary operator?</p>
+        condition ? expr1 : expr2 
+        
+        
+       <p> 30. What is nesting?</p>
+        Nesting is when you write something inside of something else. You can have a function inside of another function
+        
+       <p> 31. What are functions useful for?</p>
+        allows you to define a block of code, give it a name and then execute it as many times as you want.
+        
+       <p> 32. How do you invoke a function?</p>
+        calling it -> nameFunction()
+        
+       <p> 33. What are anonymous functions?</p>
+        functions without name
+        
+       <p> 34. What is function scope?</p>
+        A function scoped variable means that the variable defined within a function will not accessible from outside the function.
+        
+       <p> 35. What are return values?</p>
+        The return statement is used to return a particular value from the function to the function caller. The function will stop executing when the return statement is called.
+
+
+    </section>
+
+    <!--footer-->
+    <footer>
+        All rights Bjork Weenk 2022 ⓒ
+    </footer>
+
+</body>
+
+</html>
