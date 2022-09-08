@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/8d1825da9a.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Styles/button-rps.css">
+    <title> Homepage </title>
+</head>
+
+<body>
+
+    <!-- nav-->
+    <div class="top-nav">
+        <ul class="nav-list">
+            <li class="list-items"> <a href="../html/home.html"> <img id="image" src="../images/logo.png" width="50" height="50"></a> </li>
+            <li class="list-items"> <a class="list-items" href="../html/questions.html"> Questions</a></li>
+            <li class="list-items"> <a class="list-items" href="../html/questions2.html"> Questions 2</a></li>
+            <li class="list-items"> <a class="list-items" href="../html/assignment.html"> Assignments </a></li>
+        </ul>
+    </div>
+
+    <div id="game">
+        <h1>Rock Paper Scissors</h1>
+
+        <!--Displays Score player vs computer -->
+        <div class="score">
+            <div id="score--player">
+                <h2>Player</h2>
+                <p class="score--player"></p>
+            </div>
+            <div id="score--computer">
+                <h2>Computer</h2>
+                <p class="score--computer"></p>
+            </div>
+        </div>
+
+        <!-- Options / Main body of the game -->
+        <div class="options">
+            <div class="options--message hide"></div>
+            <div class="options--player">
+                <button class="option_player option_rock" data-options="rock">
+                    <i class="far fa-hand-rock fa-5x"></i>
+                </button>
+
+                <button class="option_player option_paper" data-options="paper">
+                    <i class="far fa-hand-paper fa-5x"></i>
+                </button>
+
+                <button class="option_player option_scissors" data-options="scissors">
+                    <i class="far fa-hand-scissors fa-5x"></i>
+                </button>
+            </div>
+
+            <div class="options--computer">
+                <button class="option_computer option_rock" data-options="rock" disabled>
+                    <i class="far fa-hand-rock fa-5x"></i>
+                </button>
+
+                <button class="option_computer option_paper" data-options="paper" disabled>
+                    <i class="far fa-hand-paper fa-5x"></i>
+                </button>
+
+                <button class="option_computer option_scissors" data-options="scissors" disabled>
+                    <i class="far fa-hand-scissors fa-5x"></i>
+                </button>
+            </div>
+            <button class="options--reset hide">Reset &#8634;</button>
+            <div class="options--encouragement">Choose wisely!</div>
+        </div>
+    </div>
+
+   
+
+
+
+    <!-- footer -->
+    <footer>
+        <p> All rights Bjork Weenk 2022 ⓒ </p>
+    </footer>
+    <script src="../js/button-rps.js"></script>
+</body>
+
+</html>

@@ -16,7 +16,8 @@
     <!-- nav -->
     <div class="top-nav">
         <ul class="nav-list">
-            <li class="list-items"> <a href="../html/home.html"> <img id="image" src="../images/logo.png" width="50" height="50"></a> </li>
+            <li class="list-items"> <a href="../html/home.html"> <img id="image" src="../images/logo.png" width="50"
+                        height="50"></a> </li>
             <li class="list-items"> <a class="list-items" href="../html/questions.html"> Questions</a></li>
             <li class="list-items"> <a class="list-items" href="../html/questions2.html"> Questions 2</a></li>
             <li class="list-items"> <a class="list-items" href="../pages/clone.html"> Assignments </a></li>
@@ -25,135 +26,58 @@
     <!-- questions -->
     <section>
         <h1>QUESTIONS</h1>
+        <p> 1. Why is it important to write clean code? </p>
+        It's more clear and easier to work with people and for you're self
+        <p> 2. What is the difference between good comments and bad comments? </p>
+        good comments , everbody can work with. Bad comments won't work.
+        <p>3. What is an array? </p>
+        An array is a collection of similar data elements stored at contiguous memory locations.
+        <p> 4. What are arrays useful for? </p>
+        In coding and programming, an array is a collection of items, or data, stored in contiguous memory locations,
+        also known as database systems . The purpose of an array is to store multiple pieces of data of the same type
+        together.
+        <p> 5. How do you access an array element? </p>
+        To access an individual element of an array, use the name of the array name followed by the index of the element
+        in square brackets. Array indices start at 0 and end at size-1: array_name[index]; accesses the index'th element
+        of array_name starting at zero.
+        <p> 6. How do you change an array element? </p>
+        Use the indexOf() method to get the index of the element you want to replace. Call the Array. splice() method to
+        replace the element at the specific index. The array element will get replaced in place
+        <p> 7. What are some useful array properties? </p>
+        filter, reduce, slice, sort, every and for each
+        <p> 8. What are some useful array methods? </p>
+        filter, reduce, slice, sort, every and for each
+        <p> 9. What are loops useful for? </p>
+        Loops is needed for repeats a statement or group of statements while a given condition is satisfied as true
+        <p> 10.What is the break statement? </p>
+        Break Statement is a loop control statement that is used to terminate the loop
+        <p> 11. What is the continue statement? </p>
+        The continue statement terminates execution of the statements in the current iteration of the current or labeled
+        loop, and continues execution of the loop with the next iteration.
+        <p> 12.What is the DOM? </p>
 
-       <p> 1. Name the three ways to declare a variable? </p>
-        var, let, const
-        
-       <p> 2. Which of the three variable declarations should you avoid and why?</p>
-        var because it has an global scope and it is inmutable
-        
-       <p> 3. What rules should you follow when naming variables?</p>
-        it must has relationship with the information it archieve. you can use camelcase or bem
-        
-        <p>4. What should you look out for when using the + operator with numbers and
-        strings?</p>
-        it's concatenate strings and you have to use single/doble quotes. 'hello' + 'world
-        
-       <p> 5. How does the % operator work?</p>
-        The remainder operator (%) returns the remainder of the division between two operands.
-        
-       <p>6. Explain the difference between == and ===.</p>
-        === it means strictly equal and compares if two operands are same in type and value. Returns a boolean result. t/f
-        == regular equal, and compares only the value not type of elements.
-        
-       <p> 7. When would you receive a NaN result?</p>
-        is a propiety of an object that declares its not a number. eg: '2' + 2
-        
-        <p></p>8. How do you increment and decrement a number?</p>
-        let number = 0
-        const adding = number++ (adds one to)
-        
-        <p> 9. Explain the difference between prefixing and post-fixing increment/decrement
-        operators.</p>
-        If used postfix, with operator after operand (for example, x++), the increment operator increments and returns the value before incrementing.
-        If used prefix, with operator before operand (for example, ++x), the increment operator increments and returns the value after incrementing.
-        
-        <p> 10. What is operator precedence and how is it handled in JS?</p>
-        determinate the order in which operators are evaluated one respect the other. you can handled with ()
-        11. How do you log information to the console?</p>
-        const data = 'Hello World'
-        console.log('data')
-        
-        <p> 12. What does unary plus operator do to string representations of integers?</p>
-        The unary plus (+) precedes its operand and evaluates to its operand. It attempts to convert the operand to a number, if it isn't already.
-        
-        
-        <p> 13. What are the eight data types in JavaScript?</p>
-        String. Number. Boolean. Null.
-        Undefined. Symbol. BigInt. Object.
-        
-        <p> 14. Which data type is NOT primitive?</p>
-        Objects
-        
-        <p>15. What is the relationship between null and undefined?</p>
-        undefined is a variable that refers to something that doesn't exist, and the variable isn't defined to be anything. null is a variable that is defined but is missing a value.
-        
-        <p> 16. What is the difference between single, double, and backtick quotes for strings?</p>
-        there is no real difference between using single quotes, double quotes but with backticks you can use javascript variables in the string
-        
-        <p> 17. What is the term for embedding variables/expressions in a string?</p>
-        JavaScript string interpolation is the process of embedding an expression into part of a string.
-        
-        <p> 18. Which type of quote lets you embed variables/expressions in a string?</p>
-        backticks
-        
-        <p> 19. How do you embed variables/expressions in a string?</p>
-        `${variable}`
-        
-        <p> 20. How do you escape characters in a string?</p>
-        \ is a special character within a string used for escaping
-        
-        <p> 21. What is the difference between the slice/substring/substr string methods?</p>
-        slice() extracts parts of a string and returns the extracted parts in a new string.
-        substr() extracts parts of a string, beginning at the character at the specified position, and returns the specified number of characters.
-        substring() extracts parts of a string and returns the extracted parts in a new string.
-        
-        <p> 22. What are the three logical operators and what do they stand for?</p>
-        There are four logical operators in JavaScript: || (OR), && (AND), ! (NOT), ??
-        
-        <p> 23. What are the comparison operators?</p>
-        Equal ( == )	Returns true if the operands are equal.
-        Not equal ( != )	Returns true if the operands are not equal.
-        Strict equal ( === )	Returns true if the operands are equal and of the same type. 
-        
-        <p> 24. What are truthy and falsy values?</p>
-        Truthy values are values that evaluate to True in a boolean context. Falsy values are values that evaluate to False in a boolean context
-        
-        <p> 25. What are the falsy values in JavaScript?</p>
-        There are only six falsey values in JavaScript: undefined , null , NaN , 0 , "" (empty string), and false 
-        
-        <p>26. What are conditionals?</p>
-        Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run
-        
-        <p>27. What is the syntax for an if/else conditional?</p>
-        if (condition) {
-          //  console.log('ok')
-        } else {
-         // console.log('wrong')
-        }
-        
-        <p> 28. What is the syntax for a switch statement?</p>
-        switch (expresión) {
-          case value1:
-            //code
-            break;
-          case value2:
-            //code
-            break;
-        
-        
-            <p> 29. What is the syntax for a ternary operator?</p>
-        condition ? expr1 : expr2 
-        
-        
-       <p> 30. What is nesting?</p>
-        Nesting is when you write something inside of something else. You can have a function inside of another function
-        
-       <p> 31. What are functions useful for?</p>
-        allows you to define a block of code, give it a name and then execute it as many times as you want.
-        
-       <p> 32. How do you invoke a function?</p>
-        calling it -> nameFunction()
-        
-       <p> 33. What are anonymous functions?</p>
-        functions without name
-        
-       <p> 34. What is function scope?</p>
-        A function scoped variable means that the variable defined within a function will not accessible from outside the function.
-        
-       <p> 35. What are return values?</p>
-        The return statement is used to return a particular value from the function to the function caller. The function will stop executing when the return statement is called.
+        The Document Object Model (DOM) is an application programming interface (API) for HTML and XML documents. It
+        defines the logical structure of documents and the way a document is accessed and manipulated.
+        <p> 13.How do you target the nodes you want to work with? </p>
+        <p>14.How do you create an element in the DOM? </p>
+        <p>15.How do you add an element to the DOM? </p>
+        <p> 16.How do you remove an element from the DOM? </p>
+        <p> 17.How can you alter an element in the DOM? </p>
+        <p>18.When adding text to a DOM element, should you use textContent or innerHTML? </p>
+        <p> 19.Where should you include your JavaScript tag in your HTML file when working
+            with DOM nodes? </p>
+        <p> 20.How do “events” and “listeners” work? </p>
+        <p> 21.What are three ways to use events in your code? </p>
+        <p> 22.Why are event listeners the preferred way to handle events? </p>
 
+        <p> 23.What are the benefits of using named functions in your listeners? </p>
+        <p> 24.How do you attach listeners to groups of nodes? </p>
+        <p> 25.What is the difference between the return values of querySelector and
+            querySelectorAll? </p>
+        <p> 26.What does a “nodelist” contain? </p>
+        <p> 27.Explain the difference between “capture” and “bubbling”.
+        <p> 28.What is the difference between objects and arrays? </p>
+        <p> 29.How do you access object properties? </p>
 
     </section>
 

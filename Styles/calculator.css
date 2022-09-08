@@ -1,0 +1,238 @@
+
+/*body */
+body {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(20, 33, 61, 1) 20%, rgba(0, 212, 255, 1) 65%);
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+/*navbar */
+.top-nav {
+    width: 100%;
+    
+}
+
+.nav-list {
+    display: flex;  
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    background: rgba(15, 25, 83, 0.6); 
+    position: absolute;
+    top : 0;
+
+}
+
+#image {
+    margin-top: -10px;
+}
+
+.list-items {
+    list-style-type: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.list-items:hover {
+    color: hsl(45, 100%, 50%);
+}
+
+
+:root {
+    --primary-color: #1f222a;
+    --secondary-color: #292C36;
+    --button-color: #666699;
+    --operator-color: #cc6a38;
+    --number-color: #FFFF;
+    --display-background-color: #0d0c04;
+    --display-color: #d8d8d8;
+    --clear-background-color: #d1d1d1;
+}
+
+#main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 370px;
+    height: auto;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+    box-shadow: 0px 15px 20px 5px #00000046;
+}
+
+.calculator-screen-mask {
+    padding: 1em;
+}
+
+.calculator-screen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: auto;
+    padding: 1em 0.5em 0.5em 0.5em;
+    font-family: 'Segment7Standard', sans-serif;
+    font-size: 2.5em;
+    border-radius: 10px;
+    background-color: var(--display-background-color);
+    color: var(--display-color);
+    overflow: hidden;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-rows:  repeat(5, 70px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 2em 1em 2em 1em;
+    background-color: var(--secondary-color);
+    border-top: 10px double var(--primary-color);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: var(--button-color);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.equal {
+    grid-column: -2;
+    grid-row: 2 / span 4;
+}
+
+.number, .decimal {
+    box-shadow: 3px 3px 1px #22252D,
+                -1px -1px 1px#3d495f;
+    color: var(--number-color);
+}
+
+.number:active,.decimal:active {
+    background-color: #3d495f;
+}
+
+.operator, .equal {
+    box-shadow: 3px 3px 1px #22252D,
+                -1px -1px 1px#3d495f;
+    background-color: var(--operator-color);
+    color: var(--number-color)
+}
+
+.operator:focus {
+    background-color:  var(--number-color);
+    color: var(--operator-color);
+}
+
+.equal:active {
+    background-color: #a1532c;
+    color: var(--number-color);
+}
+
+.clear {
+    box-shadow: 3px 3px 1px #22252D,
+                -1px -1px 1px#3d495f;
+    background-color: var(--clear-background-color);
+    color: #000;
+}
+
+.clear:active {
+    background-color: #b5b5b5;
+}
+
+
+/* container - 4 headings / */
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+    animation: assignment 2s infinite;
+    animation-delay: calc(.1s * var(--i));
+    margin-top: 300px;
+}
+
+hr {
+    color: rgba(0, 212, 255, 0.2); 
+    border-style:double;
+
+}
+
+@keyframes assignment {
+    0%, 40%, 100% {
+        transform: translateY(50);
+    }
+    20%{
+        transform: translateY(50%)
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-top: 150px;
+}
+
+
+.container .square {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 60px;
+}
+
+.container-txt1 {
+    color: rgba(0, 212, 255, 1);
+    text-align: center;
+    margin-top: 80px;
+}
+
+.container-txt2 {
+    color: hsl(185, 86%, 28%);
+    text-align: center;
+    margin-top: 80px;
+}
+
+.container-txt3 {
+    color: #2325a7;
+    text-align: center;
+    margin-top: 80px;
+}
+
+a {
+    text-decoration: none; 
+}
+
+.square:hover {
+    background-color: #060e2e;
+    transform: scale(2.5);
+}
+
+/*footer*/
+footer {
+    background: rgba(15, 25, 83, 0.6); 
+    position: absolute;
+    bottom : 0 ; 
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
