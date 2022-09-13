@@ -59,25 +59,50 @@
         The Document Object Model (DOM) is an application programming interface (API) for HTML and XML documents. It
         defines the logical structure of documents and the way a document is accessed and manipulated.
         <p> 13.How do you target the nodes you want to work with? </p>
+        In order to interact with any node in the tree, we first need to target (select) it.
         <p>14.How do you create an element in the DOM? </p>
+        To create a DOM element, you use the createElement() method.
         <p>15.How do you add an element to the DOM? </p>
+        To add a new element to the HTML DOM, you must create the element (element node) first, and then append it to an existing element.
         <p> 16.How do you remove an element from the DOM? </p>
+        Remove a DOM Element
+First, select the target element that you want to remove using DOM methods such as querySelector() .
+Then, select the parent element of the target element and use the removeChild() method.
         <p> 17.How can you alter an element in the DOM? </p>
+        First, select the DOM element that you want to replace.
+Then, create a new element.
+Finally, select the parent element of the target element and replace the target element by the new element using the replaceChild() method.
         <p>18.When adding text to a DOM element, should you use textContent or innerHTML? </p>
+        innerHTML
         <p> 19.Where should you include your JavaScript tag in your HTML file when working
             with DOM nodes? </p>
+            In the head
         <p> 20.How do “events” and “listeners” work? </p>
+        Often an event listener is registered with the object that generates the event. When the event occurs, the object iterates through all listeners registered with it informing them of the event. Have a look at the AWT/Swing event model in Java for example.
         <p> 21.What are three ways to use events in your code? </p>
+        There are three ways to declare an event in JavaScript: inline, using a property, or using a listener.
         <p> 22.Why are event listeners the preferred way to handle events? </p>
 
+        Event listeners represent the interfaces responsible to handle events. 
         <p> 23.What are the benefits of using named functions in your listeners? </p>
+
+Named functions can be either declared in a statement or used in an expression. Named function expressions create readable stack traces
         <p> 24.How do you attach listeners to groups of nodes? </p>
+        In JavaScript you add an event listener to a single element using this syntax: document.querySelector('.my-element').
         <p> 25.What is the difference between the return values of querySelector and
             querySelectorAll? </p>
+            return one values, returns all the selected or returns the one that is slected.
         <p> 26.What does a “nodelist” contain? </p>
-        <p> 27.Explain the difference between “capture” and “bubbling”.
+        A NodeList is a collection of document nodes (element nodes, attribute nodes, and text nodes). 
+        <p> 27.Explain the difference between “capture” and “bubbling”.</p>
+        Capturing phase : the event moves down towards the element. Target phase: the event reaches the target element. Bubbling phase: the event bubbles up from the element.
         <p> 28.What is the difference between objects and arrays? </p>
+        Objects represent a special data type that is mutable and can be used to store a collection of data (rather than just a single value). Arrays are a special type of variable that is also mutable and can also be used to store a list of values.
         <p> 29.How do you access object properties? </p>
+        3 Ways To Access Object Properties in JavaScript
+Dot property accessor: object. property.
+Square brackets property access: object['property']
+Object destructuring: const { property } = object.
 
     </section>
 
